@@ -1,0 +1,20 @@
+@use 'src/styles' as *;
+
+:host {
+
+    .product {
+        &__create {
+            &--body {
+                @include center-content;
+                flex-direction: column;
+                background-color: $message--color-primary;
+            }
+
+            &--message {
+                p {
+                    color: orange;
+                }
+            }
+        }
+    }
+}
